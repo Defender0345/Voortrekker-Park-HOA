@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/main.css">
+  <title>Voortrekker Park Homeowners Association</title>
+</head>
+
+<body>
+    <div class="navbar">
+      <div class="container">
+        <a class="logo" href="index.html"><img src="Images/VP Logo New.png" alt="VPHA"></a>
+        <img id="mobile-cta" class="mobile-menu" src="Images/menu.svg" alt="Open Navigation Menu">
+        <nav>
+          <img id="mobile-exit" class="mobile-menu-exit" src="Images/exit.svg" alt="Close Navigation Menu">
+          <ul class="primary-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="constitution.html">Constitution</a></li>
+            <li><a href="#policies">Policies</a></li>
+            <li><a href="underdev.html">News Letter</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- About -->
+    
+    <section id="about" class="solutions flex-columns">
+      <div class="row">
+        <div class="column">
+          <div class="column-1">
+            <img class="showcase-image" src="Images/showcase.jpg" alt="Picture of front gate">
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-2 bg-primary">
+            <h1><u>About Us</u></h1>
+            <h4>
+              <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sed nobis ipsam accusantium quis quibusdam quasi dolor aspernatur est ex? Quos consectetur quasi laboriosam iure! Repellat officiis obcaecati deserunt error!</div>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="policies" class="policies">
+      <h1><u>Our Policies</u></h1>
+      <div class="wrapper">
+        <a href="underdev.html">One</a>
+        <a href="underdev.html">Two</a>
+        <a href="underdev.html">Three</a>
+        <a href="underdev.html">Four</a>
+        <a href="underdev.html">Five</a>
+        <a href="policy6.html">Beleid 6 Elektries Electrical</a>
+        <a href="policy7.html">Beleid 7 Skadu Afdak Shade Port</a>
+        <a href="policy8.html">Beleid 8 Heinings Fences</a>
+        <a href="policy9.html">Beleid 9 Wendyhuis Wendy House</a>
+        <a href="underdev.html">Ten</a>
+        <a href="underdev.html">Eleven</a>
+        <a href="policy12.html">Beleid 12 Parkering Parking</a>
+        <a href="underdev.html">Thirteen</a>
+        <a href="policy14.html">Beleid 14 Toegangs Beheer Access Controle</a>
+        <a href="policy15.html">Beleid 15 Boetes Fines</a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+  
+    <section id="contact" class="solutions flex-columns">
+      <div class="row">
+        <div class="column">
+          <div class="column-2 bg-primary">
+            <h1><u>Contact Us</u></h1>
+            <h2>
+              <i class="fas fa-phone-square-alt"></i> 072 686 0076 <br>
+              <i class="far fa-envelope"></i> vphv123@gmail.com <br>
+            </h2>
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-1">
+            <iframe id="google-maps"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d981.9436467989169!2d18.83607961720795!3d-34.124549464873766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcdcae6dc8516d3%3A0xb417263fdc3c48b9!2sVoortrekker%20Park%20Resorts!5e0!3m2!1sen!2sza!4v1614688818919!5m2!1sen!2sza"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Footer -->
+
+    <footer class="footer bg-dark">
+          <p>Copyright &copy; 2021 - Voortrekker Park Homeowners Association</p>
+    </footer>
+
+    <!-- Mobile Nav Menu JS -->
+    <script>
+      const mobileBtn = document.getElementById('mobile-cta');
+      const nav = document.querySelector('nav');
+      const mobileBtnExit = document.getElementById('mobile-exit');
+
+      mobileBtn.addEventListener('click', () => {
+        nav.classList.add('menu-btn');
+      })
+
+      mobileBtnExit.addEventListener('click', () => {
+        nav.classList.remove('menu-btn');
+      })
+    </script>
+</body>
+</html>

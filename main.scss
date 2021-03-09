@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #1a7664;
+}
+
+// Body
+body {
+  background: #f2f2f2;
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  border: var(--primary-color) solid 1.5px;
+
+  img {
+    border-bottom: var(--primary-color) solid 1.5px;
+  }
+}
+
+// Navbar
+.navbar {
+  background: white;
+  padding: 0.8em 1.7em 0.8em 1.7em;
+  border-bottom: var(--primary-color) solid 1.5px;
+
+  img {
+    max-height: 50px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    place-content: space-between;
+  }
+
+  .mobile-menu {
+    cursor: pointer;
+  }
+}
+
+/* Flex columns */
+
+.flex-columns.flex-reverse .row {
+  flex-direction: row-reverse;
+}
+.flex-columns .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flex-columns .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+  height: 100%;
+  max-height: 75vh;
+}
+
+.flex-columns img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flex-columns .column-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px;
+  border-bottom: var(--primary-color) solid 1.5px;
+}
+
+.flex-columns h2 {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.flex-columns h4 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.flex-columns p {
+  margin: 20px 0;
+}
+
+// Policies Section
+
+section.policies {
+  h1 {
+    text-align: center;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin: 1em 2em;
+
+    a {
+      text-decoration: none;
+      color: black;
+      border: var(--primary-color) solid 1.5px;
+      padding: 0.6em 2em;
+      margin: 0.6em;
+      border-radius: 5em;
+
+      &:hover {
+        font-size: bold;
+      }
+    }
+  }
+}
+
+// Mobile Nav Menu
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: var(--primary-color);
+  height: 100vh;
+  padding: 1em;
+
+  ul.primary-nav {
+    margin-top: 5em;
+  }
+
+  li {
+    a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 0.5em;
+      font-size: 1.3em;
+      text-align: right;
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+// Desktop Nav
+@media only screen and (min-width: 768px) {
+  .mobile-menu,
+  .mobile-menu-exit {
+    display: none;
+  }
+
+  .navbar .container {
+    display: grid;
+    grid-template-columns: 180px auto;
+    font-size: 1.5em;
+
+    .logo {
+      img {
+        max-height: 100px;
+      }
+    }
+  }
+
+  .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+
+    ul {
+      display: flex;
+    }
+    a {
+      color: black;
+      font-size: 0.7em;
+      padding: 0.1em 1em;
+    }
+
+    ul.primary-nav {
+      margin: 0;
+      padding-top: 25px;
+    }
+  }
+
+  section.policies {
+    .wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 1em 2em;
+
+      a {
+        &:hover {
+          font-weight: bold;
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile Flex Items */
+@media (max-width: 768px) {
+  .flex-columns .column,
+  .flex-grid .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .flex-columns .column h4,
+  .flex-grid .column h4 {
+    font-size: 10px;
+  }
+
+  .flex-columns .column h2,
+  .flex-grid .column h2 {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .flex-columns .column,
+  .flex-grid .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .flex-columns .column h4,
+  .flex-grid .column h4 {
+    font-size: 15px;
+  }
+
+  .flex-columns .column h2,
+  .flex-grid .column h2 {
+    font-size: 15px;
+  }
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.footer a {
+  color: #fff;
+}
+
+// Policy pdf
+
+.pdf-container {
+  align-items: center;
+  padding: 30px;
+  height: 80vh;
+
+  embed {
+    width: 100%;
+    height: 100%;
+  }
+}
