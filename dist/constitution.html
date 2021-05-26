@@ -10,6 +10,7 @@
     crossorigin="anonymous" />
   <link rel="stylesheet" href="css/main.css">
   <title>Voortrekker Park Homeowners Association</title>
+  <script src="main.js" defer></script>
 </head>
 <body>
   <div class="navbar">
@@ -45,16 +46,16 @@
       <!-- English Version -->
       <object id="engpdf" data="PDF/Constitution.pdf" type="application/pdf">
         <p>Your web browser doesn't have a PDF plugin.
-          Instead you can <a href="PDF/Constitution.pdf"> click here to download
-            the PDF
-            file.</a></p>
+          Instead you can click here to download <a href="PDF/Constitution.pdf"> Constitution(ENG) 
+            </a>as a PDF
+            file.</p>
       </object>
       <!-- Afrikaans Version -->
       <object id="afrpdf" class="hide" data="PDF/Grondwet.pdf" type="application/pdf">
         <p>Your web browser doesn't have a PDF plugin.
-          Instead you can <a href="PDF/Grondwet.pdf"> click here to download
-            the PDF
-            file.</a></p>
+          Instead you can click here to download <a href="PDF/Grondwet.pdf"> 
+            Grondwet (AFR)</a>as a PDF
+            file.</p>
       </object>
     </div>
   </section>
@@ -89,39 +90,6 @@
     <p>Copyright &copy; 2021 - Voortrekker Park Homeowners Association</p>
   </footer>
 
-  <!-- Mobile Nav Menu JS -->
-  <script>
-    const mobileBtn = document.getElementById('mobile-cta');
-    const nav = document.querySelector('nav');
-    const mobileBtnExit = document.getElementById('mobile-exit');
-
-    mobileBtn.addEventListener('click', () => {
-      nav.classList.add('menu-btn');
-    })
-
-    mobileBtnExit.addEventListener('click', () => {
-      nav.classList.remove('menu-btn');
-    })
-
-    //  Swapping PDF language
-      const switchLangBtnAfr = document.getElementById('switchLangBtnAfr');
-      const switchLangBtnEng = document.getElementById('switchLangBtnEng');
-      const showAfr = document.getElementById('afrpdf');
-      const showEng = document.getElementById('engpdf');
-
-      switchLangBtnAfr.addEventListener('click', () => {
-        showEng.classList.add('hide');
-        showAfr.classList.remove('hide');
-        switchLangBtnEng.classList.remove('hide');
-        switchLangBtnAfr.classList.add('hide');
-      })
-      switchLangBtnEng.addEventListener('click', () => {
-        showEng.classList.remove('hide');
-        showAfr.classList.add('hide');
-        switchLangBtnEng.classList.add('hide');
-        switchLangBtnAfr.classList.remove('hide');
-      })
-  </script>
   
 </body>
 </html>

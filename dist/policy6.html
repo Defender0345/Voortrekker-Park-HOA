@@ -10,6 +10,7 @@
     crossorigin="anonymous" />
   <link rel="stylesheet" href="css/main.css">
   <title>Voortrekker Park Homeowners Association</title>
+  <script src="main.js" defer></script>
 </head>
 <body>
   <div class="navbar">
@@ -35,7 +36,9 @@
     <div class="pdf-container">
       <object data="PDF/Beleid/VPHEV Beleid 6 Elektries Electrical.pdf" type="application/pdf" width="80%">
         <p>Your web browser doesn't have a PDF plugin.
-          Instead you can <a href="PDF/Beleid/VPHEV Beleid 6 Elektries Electrical.pdf"> click here to download the PDF file.</a></p>
+          Instead you can click here to download <a href="PDF/Beleid/VPHEV Beleid 6 Elektries Electrical.pdf">
+            Beleid/Policy 6 (AFR/ENG) </a>as a PDF
+          file.</p>
       </object>
     </div>
   </section>
@@ -69,19 +72,5 @@
     <p>Copyright &copy; 2021 - Voortrekker Park Homeowners Association</p>
   </footer>
 
-  <!-- Mobile Nav Menu JS -->
-  <script>
-    const mobileBtn = document.getElementById('mobile-cta');
-    const nav = document.querySelector('nav');
-    const mobileBtnExit = document.getElementById('mobile-exit');
-
-    mobileBtn.addEventListener('click', () => {
-      nav.classList.add('menu-btn');
-    })
-
-    mobileBtnExit.addEventListener('click', () => {
-      nav.classList.remove('menu-btn');
-    })
-  </script>
 </body>
 </html>
