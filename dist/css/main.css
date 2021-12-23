@@ -318,6 +318,7 @@ nav li a:hover {
 
 /* Footer */
 .footer {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -325,14 +326,29 @@ nav li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100px;
+  height: 100%;
+  padding: 1em;
+}
+
+.footer .drn-logo {
+  position: absolute;
+  cursor: pointer;
+  right: 3%;
+}
+
+.footer .drn-logo img {
+  max-height: 70px;
+  max-width: 100px;
+}
+
+@media (max-width: 768px) {
+  .footer .drn-logo {
+    position: unset;
+  }
 }
 
 .footer a {
