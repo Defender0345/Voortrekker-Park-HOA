@@ -367,6 +367,30 @@ nav li a:hover {
   height: 80%;
 }
 
+@media (max-width: 768px) {
+  .pdf-container {
+    height: 50vh;
+  }
+  .pdf-history {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .pdf-history p {
+    width: 80vw;
+  }
+}
+
 #aboutUsPage {
   padding: 1em 4em;
 }

@@ -349,6 +349,23 @@ nav {
   }
 }
 
+@media (max-width: 768px) {
+  .pdf-container {
+    height: 50vh;
+  }
+
+  .pdf-history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // width: 80vw;
+    p {
+      width: 80vw;
+    }
+  }
+}
+
 // About Us Page
 
 #aboutUsPage {
